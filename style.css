@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+body{
+    background-color: black;
+}
+a{
+    color: #8cdcfc;
+}
+
+a:hover{
+    color: #43affd;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li a{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+li a:hover{
+    color: #43affd;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+#banner{
+    background-image: url(./img/banner.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+#banner.page{
+    background-position: 50% 25%;
+    height: 200px;
+}
+.logo-content{
+    object-fit: contain;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    margin-left: 8%;
+}
+#banner.page > .logo-content{
+    width: 30%;
+    margin-left: 8%;
+}
+.logo-content img{
+    width: 90%;
+    height: auto;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+div.paginas{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+}
+
+div.paginas h1{
+    padding: 30px 15px;
+    font-size: 40px;
+}
+
+.content{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trailer{
+    width: 50%;
+}
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+#sinopse p{
+    color: #ffF;
+    font-size: 14px;
+    width: 76%;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: #43affd;
+    color: #ffF;
+    padding: 8px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+.button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card{
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:0 0 20px 10px;
+    font-size: 17px;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.banner-1{
+    background-image: url(./img/cartaz01.jpg);
+}
+.banner-2{
+    background-image: url(./img/cartaz02.jpg);
+}
+.banner-3{
+    background-image: url(./img/cartaz03.jpg);
+}
+
+#atores{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+#atores .ator{
+    background-color: #cddbe43d;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ator img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: .7s;
+}
+.ator img:hover{
+   transform: scale(1.02);
+}
+.ator span{
+    padding: 10px;
+    font-size: 20px;
+}
+
+footer{
+    min-height: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #487781;
+
+}
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.copy{
+    width: 80%;
+    font-size: 12px;
+    margin: 20px auto;
+    text-align: center;
+    color: #898888;
+}
+
+#avNota{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.notas .valor{
+    font-size: 35px;
+}
+div.stars{
+
+}
+div.stars > span{
+    background-size: 12px 12px;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+span.starFull{
+    background-image: url(./img/starFull.png);
+}
+span.starMeio{
+    background-image: url(./img/starMeia.png);
+}
+span.starNone{
+    background-image: url(./img/starNone.png);
+}
+div.coment{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 1px solid #444f59;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+div.coment > div.foto{
+    margin: 15px;
+    background: #74efff;
+    border-radius: 50%;
+    min-width: 30px;
+    height: 30px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    font-size: 19px;
+}
+.txtComent p {
+     font-size: 15px;
+}
+#comentarios h2{
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px){
+   
+    .logo-content {
+        width: 100%;
+        padding: 5% 15%;
+        margin: 0 auto;
+        background: #004d7682;
+    }
+    div.copy{
+        width: 95%;
+    }
+    footer{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .footer-navigation{
+        display: block;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #00000082;
+    }
+    nav{
+        display: none;
+    }
+    #banner{
+        align-items: end;
+        background-position: 95%;
+    }
+    #trailer-container{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .trailer{
+        width: 100%;
+    }
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    #sinopse p{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        width: 80%;
+    }
+    .card{
+        height: 250px;
+    }
+    #atores{
+        grid-template-columns: 1fr;
+    }
+    #banner.page > div.logo-content{
+       display: none;
+    }
+    #banner.page {
+        background-position: 50% 10%;
+        height: 150px;
+    }
+}
