@@ -136,6 +136,10 @@ img.icon{
     width: 60px; 
     height: 60px; 
     padding-top: 10px;
+    padding-right: 10px;
+}
+
+a > img.icon{
     cursor: pointer;
 }
 
