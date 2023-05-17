@@ -193,6 +193,7 @@ form button {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 .cards-content{
     width: 90%;
@@ -264,9 +265,7 @@ footer{
     align-items: center;
     justify-content: space-around;
     border-top: 1px solid #134854;
-
 }
-
 
 footer span{
     font-size: 13px;
