@@ -99,7 +99,52 @@ div.paginas h1{
     padding: 30px 15px;
     font-size: 40px;
 }
+div.paginas form{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
 
+div.paginas form{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    min-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+}
+
+div.paginas label {
+    display: block;
+    margin-top: 20px;
+  }
+
+div.paginas input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #9a9a9a;
+    border-radius: 10px;
+    background-color: #38383882;
+  }
+div.paginas textarea{
+    height: 130px;
+  }
+
+form button {
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #43affd;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
 .content{
     width: 80%;
     display: flex;
@@ -296,7 +341,7 @@ div.coment > div.foto{
         width: 100%;
         padding: 5% 15%;
         margin: 0 auto;
-        background: #004d7682;
+        background: #12293682;
     }
     div.copy{
         width: 95%;
@@ -317,6 +362,7 @@ div.coment > div.foto{
     #banner{
         align-items: end;
         background-position: 95%;
+        height: 408px;
     }
     #trailer-container{
         width: 100%;
@@ -365,4 +411,15 @@ div.coment > div.foto{
         background-position: 50% 10%;
         height: 150px;
     }
+
+    div.paginas h1{
+    font-size: 25px;
+    }
+    .txtComent p {
+     font-size: 13px;
+    }
+    #comentarios h2{
+        font-size: 20px;
+    }
+    
 }
