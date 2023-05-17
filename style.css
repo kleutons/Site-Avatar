@@ -85,6 +85,7 @@ li a:hover{
     justify-content: space-around;
     width: 45%;
     margin-left: 8%;
+    animation: float 2s ease-in-out;
 }
 #banner.page > .logo-content{
     width: 30%;
@@ -128,6 +129,7 @@ div.paginas form{
     margin-top: 30px;
     margin-bottom: 80px;
     box-sizing: border-box;
+    margin-right: 5vw
 }
 
 img.icon{
@@ -143,7 +145,7 @@ div.paginas label {
   }
 
 div.paginas input, textarea {
-    width: 90%;
+    width: 94%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #9a9a9a;
@@ -452,6 +454,11 @@ div.coment > div.foto{
     
     div.paginas form {
     min-width: 270px;
+    margin-right: 0;
     }
+
+    div.contentContact{
+        flex-direction: column;
+    } 
     
 }
